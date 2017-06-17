@@ -1,0 +1,13 @@
+<div *ngIf="item === 0" class="card w-75">
+  <div class="card-block">
+    <h3 class="card-title">{{ data[item].title }}</h3>
+    <p class="card-text">{{ data[item].text }}</p>
+    <a href="#" class="btn btn-secondary">{{ data[item].link.text }}</a>
+  </div>
+</div>
+
+<div *ngIf="item === 1" class="card">
+  <div class="card-block">
+    <img class="card-img img-fluid" [src]="data[item].imgSrc" alt="Card image cap">
+  </div>
+</div>
